@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string name="judul_spinner">Pilih Kondisi Korban</string>
+<string-array name="kondisi">
+    <item>Luka ringan</item>
+    <item>Luka berat</item>
+    <item>Meninggal dunia</item>
+</string-array>
+
+</resources>

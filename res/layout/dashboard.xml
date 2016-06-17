@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_holo_dark" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/logout"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+    
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+	        android:gravity="center"
+	        android:text="FORM LAPORAN KECELAKAAN"
+	        android:textColor="#FFFFFF"
+	        android:textSize="20sp"
+	        android:textStyle="bold" />
+	        
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:padding="20dp" >
+	
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="Nomor TNBK"
+	            android:textColor="#FFFFFF"
+	            android:textStyle="bold" />
+	
+	        <EditText
+	            android:id="@+id/tnkb"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:ems="10" />
+	        
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:text="Nama"
+	            android:textColor="#FFFFFF"
+	            android:textStyle="bold" />
+	
+	        <EditText
+	            android:id="@+id/nama"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:ems="10" />
+	
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:text="Alamat"
+	            android:textColor="#FFFFFF"
+	            android:textStyle="bold" />
+	        
+	        <EditText
+	            android:id="@+id/alamat"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:ems="10" />
+	        
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:text="Lokasi Kejadian"
+	            android:textColor="#FFFFFF"
+	            android:textStyle="bold" />
+	        
+	        <EditText
+	            android:id="@+id/lokasi"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:ems="10" />
+
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="3"
+	            android:text="Kondisi Korban"
+	            android:textColor="#FFFFFF"
+	            android:textStyle="bold" />
+
+	        <Spinner
+	            android:id="@+id/spKondisi"
+	            android:layout_width="wrap_content"
+	            android:layout_height="50dp"
+	            android:layout_weight="1"
+	            android:entries="@array/kondisi"
+	            android:prompt="@string/judul_spinner" />
+	        
+	       <RadioGroup
+	            android:id="@+id/kondisi"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+
+		        <RadioButton
+		            android:id="@+id/lukaringan"
+		            android:layout_marginLeft="5dp"
+		            android:text="Luka Ringan" />
+				<RadioButton
+				    android:id="@+id/lukaberat"
+				    android:layout_marginLeft="5dp"
+				    android:text="Luka Berat" />
+			    <RadioButton
+			        android:id="@+id/meninggaldunia"
+			        android:layout_marginLeft="5dp"
+			        android:text="Meninggal Dunia" />
+		    </RadioGroup>
+
+	        <Button
+	            android:id="@+id/btnImage"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@null"
+	            android:text="Please take a picture here"
+	            android:textColor="#FFFFFF"
+	            android:textStyle="bold" />
+		
+		     <ImageView
+		         android:id="@+id/imgView"
+		         android:layout_width="250dp"
+		         android:layout_height="200dp"
+		         android:layout_gravity="center"
+		         android:src="@drawable/ic_launcher" />
+		    
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:text="Kronologi"
+	            android:textColor="#FFFFFF"
+	            android:textStyle="bold" />
+	        
+	        <EditText
+	            android:id="@+id/kronologi"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:ems="10" />
+
+	        <Button
+	            android:id="@+id/btnsubmit"
+	            android:layout_width="70dp"
+	            android:layout_height="35dp"
+	            android:layout_gravity="right"
+	            android:layout_marginBottom="30dp"
+	            android:layout_marginTop="10dp"
+	            android:background="@drawable/submit_button1" />
+	
+	    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
